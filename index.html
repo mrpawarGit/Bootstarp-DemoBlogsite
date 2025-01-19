@@ -4,266 +4,162 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>mTOONS - Read Manhwas , mangas & comics</title>
+  <title>Webtoons Replica</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    .banner {
+      background-image: url('https://www.webtoons.com/static/images/header/bg-gradient.png');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 60px 0;
+    }
+
+    .category {
+      padding: 20px;
+    }
+
+    .footer {
+      background-color: #212529;
+      color: white;
+      padding: 20px 0;
+    }
+
+    .footer a {
+      color: #ddd;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
 <body>
-  <!--Start-->
-
-  <nav class="navbar navbar-expand-lg bg-body-tertiary  ">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><b style="color: maroon;">mTOONS</b></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Webtoons</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Popular</a>
-          </li>
-          <!--
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <b>Genres</b>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Fantasy</a></li>
-              <li><a class="dropdown-item" href="#">Romance</a></li>
-              <li><a class="dropdown-item" href="#">Drama</a></li>
-              <li><a class="dropdown-item" href="#">Sci-fi</a></li>
-              <!--<li><hr class="dropdown-divider"></li>-->
-              <!--<li><a class="dropdown-item" href="#">Something else here</a></li>-->
-            </ul>
-          </li>
-          <!--
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
-          -->
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Genres</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Originals</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Popular</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Sign In</a></li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
       </div>
     </div>
   </nav>
 
-  <!-- Breadcrumb added -->
-
-  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Home</a></li>
-      <!--
-        <li class="breadcrumb-item"><a href="#">Category</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Action</li>
-        -->
-    </ol>
-  </nav>
-
-  <!--Carousel added -->
-  <div class="container-fluid">
-
-    <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item bg-secondary active" data-bs-interval="2000">
-          <img src="../images/boundless.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h1>Boundless Ascension</h1>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item bg-info" data-bs-interval="5000">
-          <img src="../images/ageofarrogance.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h1>The Age of Arrogance</h1>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item bg-danger" data-bs-interval="4000">
-          <img src="../images/doombreaker.png" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h1>Doom Breaker</h1>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-  </div>
-
-  <!-- Cards -->
-
-
-    <div class="album py-5 bg-light">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="../images/randomChat.jpg" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"
-                alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <!--
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card mb-4 box-shadow">
-              <img src="../images/unOrdinary.jpg" class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"
-              alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="../images/MythicItemObtained_thumbnail_desktop.jpg" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"
-                alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="../images/TeenageMercenary.jpg" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"
-                alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="../images/towerOfGod.jpg" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"
-                alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="../images/subKeeper.jpg" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"
-                alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="../images/lazySwordsman.jpg" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"
-                alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card mb-4 box-shadow">
-              <img class="card-img-top" src="../images/perfectMarriage.jpg" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"
-                alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    
-  </div>
-
-  <!-- Footer Added -->
-  <div>
+  <!-- Banner -->
+  <section class="banner">
     <div class="container">
-      <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-        </ul>
-        <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
-      </footer>
+      <h1>Welcome to Webtoons</h1>
+      <p>Discover the best comics, manhwas, and mangas online!</p>
+      <a href="#" class="btn btn-success">Start Reading</a>
     </div>
-  </div>
+  </section>
 
+  <!-- Categories Section -->
+  <section class="category bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Explore Genres</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Action</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Romance</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Fantasy</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Drama</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Featured Comics Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Featured Comics</h2>
+      <div class="row">
+        <!-- Comic 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="subKeeper.jpg" class="card-img-top" alt="Comic 1 - Sub Keeper">
+            <div class="card-body">
+              <h5 class="card-title">Sub Keeper</h5>
+              <p class="card-text">A thrilling story about a mysterious and powerful keeper.</p>
+              <a href="#" class="btn btn-primary">Read Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Comic 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="TeenageMercenary.jpg" class="card-img-top" alt="Comic 2 - Teenage Mercenary">
+            <div class="card-body">
+              <h5 class="card-title">Teenage Mercenary</h5>
+              <p class="card-text">Follow the action-packed life of a teenage mercenary.</p>
+              <a href="#" class="btn btn-primary">Read Now</a>
+            </div>
+          </div>
+        </div>
+        <!-- Comic 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="unOrdinary.jpg" class="card-img-top" alt="Comic 3 - UnOrdinary">
+            <div class="card-body">
+              <h5 class="card-title">UnOrdinary</h5>
+              <p class="card-text">An exciting tale of power and betrayal in a high school setting.</p>
+              <a href="#" class="btn btn-primary">Read Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!--END-->
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; 2025 Webtoons Replica. All Rights Reserved.</p>
+      <p>
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms of Service</a>
+      </p>
+    </div>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
